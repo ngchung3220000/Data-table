@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import {
   isShowings,
   isEditPosition,
@@ -89,9 +89,7 @@ function Row({ data }) {
 
         <td className="dt-body-right">{data.age}</td>
 
-        <td className="dt-body-right" onClick={handleCalendar}>
-          {data.date}
-        </td>
+        <td className="dt-body-right">{data.date}</td>
       </tr>
       {data.isShowing && (
         <tr>
